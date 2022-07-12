@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.conteudo {
+  width: 375px;
+  height: 100vh;
+  position: absolute;
+}
+.cabecalhoMobile {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+.menuCompleto {
+  display: flex;
+  height: 105vh;
+  position: absolute;
+  z-index: 1;
+}
+.menuLateral {
+  padding-left: 16px;
+  width: 245px;
+  background: white;
+}
+.menuSombra {
+  width: 130px;
+  background-color: #0c0c0ca6;
+}
+.iconeX {
+  margin-top: 21px;
+  margin-bottom: 30px;
+}
+.iconeX img {
+  margin: 8px;
+  padding-left: 10px;
+}
+.iconeX img:hover {
+  cursor: pointer;
+}
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding-left: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.cabecalhoDesktop {
+  display: none;
+}
+.linhaDesktop {
+  display: none;
+}
+.img-cliente {
+  width: 19%;
+}
+.menuLogo img {
+  margin: 8px;
+  padding-left: 9px;
+}
+.menuLogo:hover {
+  cursor: pointer;
+}
+.iconeCarrinho {
+  display: flex;
+  justify-content: space-evenly;
+}
+.carrinhoVazio {
+  width: 355px;
+  height: 28vh;
+  background: white;
+  border-radius: 7px;
+  z-index: 1;
+  position: absolute;
+  top: 11%;
+}
+.vazio {
+  padding: 19px;
+}
+.vazio span {
+  margin: 12px;
+  font-weight: 700;
+}
+.carrinho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconeCarrinho img:hover {
+  cursor: pointer;
+}
+.itensCarrinho {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 0;
+}
+.itensCarrinho:hover {
+  cursor: pointer;
+}
+.imgProduto img {
+  width: 58px;
+  border-radius: 6px;
+}
+.slideFotosDesk {
+  display: none;
+}
+.precos {
+  line-height: 26px;
+  color: hsl(219, 9%, 45%);
+}
+.valorTotal {
+  font-weight: 700;
+  color: black;
+}
+.checkout {
+  display: flex;
+  justify-content: center;
+}
+.botaocheckout {
+  background: hsl(26, 100%, 55%);
+  border-radius: 6px;
+  height: 54px;
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  gap: 13px;
+  margin-top: 28px;
+  box-shadow: 2px 6px 14px 0px hsl(26deg 88% 61% / 45%);
+}
+.botaocheckout:hover {
+  cursor: pointer;
+}
+.imagem-produto {
+  background-image: url(../../assets/images/image-product-1.jpg);
+  background-size: cover;
+  height: 305px;
+  margin-bottom: 6%;
+  position: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.descricaoProduto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+.marcaProduto {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.especificaoProduto {
+  font-size: 27px;
+  font-weight: 600;
+}
+.paragrafo {
+  font-size: 16px;
+  color: hsl(219, 9%, 45%);
+  line-height: 25px;
+}
+.valores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 0% 5%;
+}
+.valorDesconto {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: 700;
+}
+.valorProduto {
+  font-size: 27px;
+}
+.desconto {
+  color: hsl(26, 100%, 55%);
+  background: hsl(25, 100%, 94%);
+  padding: 2% 6% 2% 7%;
+  border-radius: 4px;
+}
+.economiaValor {
+  color: #858b91a6;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+.botao {
+  background: hsl(223, 64%, 98%);
+  border-radius: 6px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.botao:hover {
+  cursor: pointer;
+}
+.icones {
+  display: flex;
+  gap: 125px;
+}
+.icones button {
+  border: none;
+  background: hsl(223, 64%, 98%);
+}
+.icones button:hover {
+  cursor: pointer;
+}
+.icones span {
+  font-weight: 700;
+}
+.addCarrinho {
+  background: hsl(26, 100%, 55%);
+  border-radius: 6px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  gap: 13px;
+  margin-top: 10px;
+  box-shadow: 2px 6px 14px 0px hsl(26deg 88% 61% / 45%);
+}
+.addCarrinho:hover {
+  cursor: pointer;
+}
+.setas {
+  display: flex;
+  gap: 285px;
+  position: absolute;
+  z-index: 0;
+  top: 24%;
+  left: 3%;
+}
+.setas img {
+  background-color: white;
+  border-radius: 50%;
+  border: 11px solid white;
+}
+.setas img:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .conteudo {
+    width: 100vw;
+    height: 100vh;
+  }
+  .cabecalhoMobile {
+    display: none;
+  }
+  .cabecalhoDesktop {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    align-items: stretch;
+  }
+  .logoOpcoes {
+    display: flex;
+    gap: 45px;
+  }
+  .logo-desktop img {
+    margin-top: 37px;
+  }
+  .carrinhoFoto {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+  }
+  .carrinhoFoto:hover {
+    cursor: pointer;
+  }
+  .avatar {
+    width: 20%;
+  }
+  .opcoesdesktop {
+    display: flex;
+    gap: 33px;
+    color: hsl(219, 9%, 45%);
+    cursor: pointer;
+    margin-top: 40px;
+  }
+  .opcoesdesktop > span:hover {
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+  }
+  .desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+  .linhaDesktop {
+    display: block;
+    width: 72%;
+    margin-left: 12%;
+    margin-bottom: 5%;
+  }
+  .paragrafo {
+    margin-top: 6%;
+  }
+  .imagem-produto {
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    height: 376px;
+    width: 126%;
+  }
+  .slideFotosDesk {
+    display: block;
+    width: 23%;
+    display: flex;
+    gap: 40%;
+  }
+  .slideFotosDesk:hover {
+    cursor: pointer;
+  }
+  .slideFotosDesk img {
+    height: 84px;
+    border-radius: 10px;
+  }
+  .setas {
+    display: none;
+  }
+  .descricaoProduto {
+    width: 25%;
+  }
+  .especificaoProduto {
+    font-size: 38px;
+  }
+  .botao {
+    width: 36%;
+  }
+  .addCarrinho {
+    width: 61%;
+    margin-top: 0px;
+  }
+  .carrinhoVazio {
+    position: absolute;
+    top: 8%;
+    left: 66%;
+    width: 369px;
+    height: 30vh;
+    box-shadow: -2px 10px 17px -1px hsl(50deg 1% 52% / 45%);
+  }
+  .valores {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .valorCarrinhoDesk {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icones {
+    gap: 35px;
+  }
+}

@@ -1,0 +1,118 @@
+<div class="conteudo">
+  <nav class="menuCompleto">
+    <div *ngIf="menuLateral" id="menu" class="menuLateral">
+      <div *ngIf="menuLateral" class="iconeX"><img (click)="fechar()" src="../../assets/images/icon-close.svg" alt="">
+      </div>
+      <div class="opcoes">
+        <span>Collections</span>
+        <span>Men</span>
+        <span>Womem</span>
+        <span>About</span>
+        <span>Contatc</span>
+      </div>
+    </div>
+    <div *ngIf="menuLateral" class="menuSombra"></div>
+  </nav>
+  <div class="cabecalhoMobile">
+    <div class="menuLogo">
+      <img (click)="abrir()" src="../../assets/images/icon-menu.svg" alt="">
+      <img src="../../assets/images/logo.svg" alt="">
+    </div>
+    <!-- <div><span>1</span></div> -->
+    <div class="carrinho">
+      <div class="iconeCarrinho">
+        <img (click)="abrirCarrinho()" src="../../assets/images/icon-cart.svg" alt="">
+        <img class="img-cliente" src="../../assets/images/image-avatar.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="cabecalhoDesktop">
+    <div class="logoOpcoes">
+      <div class="logo-desktop">
+        <img src="../../assets/images/logo.svg" alt="">
+      </div>
+      <div class="opcoesdesktop">
+        <span>Collections</span>
+        <span>Men</span>
+        <span>Women</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+    </div>
+    <div class="carrinhoFoto">
+      <img (click)="abrirCarrinho()" src="../../assets/images/icon-cart.svg" alt="">
+      <img class="avatar" src="../../assets/images/image-avatar.png" alt="">
+    </div>
+  </div>
+  <hr class="linhaDesktop">
+  <div class="desktop">
+    <div>
+      <div class="imagem-produto">
+      </div>
+      <div class="slideFotosDesk">
+        <img src="../../assets/images/image-product-1-thumbnail.jpg" alt="">
+        <img src="../../assets/images/image-product-2-thumbnail.jpg" alt="">
+        <img src="../../assets/images/image-product-3-thumbnail.jpg" alt="">
+        <img src="../../assets/images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+    <div class="carrinho">
+      <div *ngIf="itensCarrinho" class="carrinhoVazio">
+        <div class="vazio">
+          <span>Cart</span>
+        </div>
+        <hr>
+        <div class="itensCarrinho">
+          <div class="imgProduto"><img src="../../assets/images/image-product-1-thumbnail.jpg" alt=""></div>
+          <div class="precos">
+            <span>Autumn Limited Edition...</span><br>
+            <span>$125,00 x 3 </span><span class="valorTotal"> $375.00</span>
+          </div>
+          <div class="iconeLixeira">
+            <img src="../../assets/images/icon-delete.svg" alt="">
+          </div>
+        </div>
+        <div class="checkout">
+          <div class="botaocheckout">
+            <span>Checkout</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="setas">
+      <div (click)="proximaFoto()"><img src="../../assets/images/icon-previous.svg" alt=""></div>
+      <div (click)="anteriorFoto()"><img src="../../assets/images/icon-next.svg" alt=""></div>
+    </div>
+    <div class="descricaoProduto">
+      <span class="marcaProduto">Sneaker Company</span>
+      <span class="especificaoProduto">Fall Limited Edition Sneakers</span>
+      <span class="paragrafo">These low-profile sneakers are your
+        perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather
+        can
+        offer.</span>
+      <div class="valores">
+        <div class="valorDesconto"><span class="valorProduto">$125.00</span>
+          <span class="desconto">50%</span>
+        </div>
+        <div class="economiaValor"><span>$250.00 </span></div>
+      </div>
+      <div class="valorCarrinhoDesk">
+        <div class="botao">
+          <div class="icones">
+            <button (click)="botaoMenos()"><img src="../../assets/images/icon-minus.svg" alt=""></button>
+            <span>{{quantidade}}</span>
+            <button (click)="botaoMais()"><img src="../../assets/images/icon-plus.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="addCarrinho">
+          <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+              fill="#FFFFFF" fill-rule="nonzero" />
+          </svg>
+          <span>Add to cart</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
